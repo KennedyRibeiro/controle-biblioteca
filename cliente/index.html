@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+	<link rel="stylesheet" href="../bootstrap-5.3.0-dist/css/bootstrap.min.css">
+    <title>Sistema Bibliotecário</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center mt-4 mb-4">Sistema de Controle Bibliotecário</h1>
+        <h2 class="mb-4">Cadastro de Livros</h2>
+        <form id="formulario-livro">
+            <div class="mb-4">
+                <label for="titulo">Título:</label>
+                <input type="text" class="form-control" id="titulo" name="titulo" placeholder="Título do livro">
+            </div>
+            <div class="mb-4">
+                <label for="autor">Autor:</label>
+                <input type="text" class="form-control" id="autor" name="autor" placeholder="Autor do livro">
+            </div>
+            <div class="mb-4">
+                <label for="qtde-exemplares">Quantidade de Exemplares:</label>
+                <input type="number" class="form-control" id="qtde-exemplares" name="qtde-exemplares" placeholder="Quantidade de exemplares disponíveis">
+            </div>
+            <button type="submit" class="btn btn-primary mb-4">Cadastrar</button>
+        </form>
+
+        <div id="livros">
+            <table class="table" id="lista-livros">
+                <thead>
+                    <tr>
+                        <th scope="col">Título</th>
+                        <th scope="col">Autor</th>
+                        <th scope="col">Quantidade de Exemplares</th>
+                        <th scope="col">Livro Apto para empréstimo?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
